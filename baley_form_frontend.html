@@ -1,0 +1,173 @@
+<!-- Custom front‑end for Google Form 1FAIpQLScd6xbYszbP8xPI9GrLDxp6NbrIwe6tN-9wz_0M-GfnSf11Bg -->
+<!-- Replace every ENTRY.XXXXXXXX with the real entry IDs you copy from the form source. -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bienvenida – Baley Cirugía Plástica</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --brand: #c0408f;
+      --bg: #f7f8fa;
+      --fg: #1f1f1f;
+      --radius: 12px;
+    }
+    body {
+      font-family: Inter, sans-serif;
+      background: var(--bg);
+      margin: 0;
+      padding: 2rem;
+      color: var(--fg);
+    }
+    h1 {
+      color: var(--brand);
+      font-size: 1.9rem;
+      margin-bottom: 0.6rem;
+      text-align: center;
+    }
+    form {
+      max-width: 700px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 2rem 2.2rem;
+      border-radius: var(--radius);
+      box-shadow: 0 2px 14px rgba(0, 0, 0, 0.08);
+    }
+    .field {
+      margin-bottom: 1.35rem;
+    }
+    label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    input,
+    textarea {
+      width: 100%;
+      padding: 0.78rem 0.9rem;
+      border: 1px solid #d7d7d7;
+      border-radius: var(--radius);
+      font-size: 1rem;
+      transition: border-color 0.2s;
+    }
+    input:focus,
+    textarea:focus {
+      outline: none;
+      border-color: var(--brand);
+    }
+    textarea {
+      resize: vertical;
+      min-height: 90px;
+    }
+    button {
+      background: var(--brand);
+      color: #fff;
+      border: none;
+      padding: 0.9rem 1.8rem;
+      font-size: 1rem;
+      border-radius: var(--radius);
+      cursor: pointer;
+      transition: background 0.25s;
+      display: block;
+      margin: 1.2rem auto 0;
+    }
+    button:hover {
+      background: #aa3477;
+    }
+    #success {
+      display: none;
+      max-width: 700px;
+      margin: 2rem auto;
+      text-align: center;
+      font-size: 1.2rem;
+      color: var(--brand);
+    }
+    /* Logo al fondo */
+    .logo {
+      display: block;
+      margin: 2.5rem auto 0;
+      max-width: 260px; /* ajusta según necesidad */
+      width: 80%;
+      height: auto;
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+  <h1>¡Queremos conocerte!</h1>
+  <form id="customForm" action="https://docs.google.com/forms/d/e/1FAIpQLScd6xbYszbP8xPI9GrLDxp6NbrIwe6tN-9wz_0M-GfnSf11Bg/formResponse" method="POST" target="hidden_iframe" onsubmit="handleSubmit(event)">
+    <div class="field">
+      <label for="fullName">¿Cuál es tu nombre completo? *</label>
+      <input type="text" id="fullName" name="entry.XXXXXXXX" required />
+    </div>
+    <div class="field">
+      <label for="age">Edad *</label>
+      <input type="number" id="age" name="entry.XXXXXXXX" required />
+    </div>
+    <div class="field">
+      <label for="preferredName">¿Cómo prefieres que te llamemos? *</label>
+      <input type="text" id="preferredName" name="entry.XXXXXXXX" required />
+    </div>
+    <div class="field">
+      <label for="occupation">¿Cuál es tu ocupación? *</label>
+      <input type="text" id="occupation" name="entry.XXXXXXXX" required />
+    </div>
+    <div class="field">
+      <label for="help">¿En qué podemos ayudarte? *</label>
+      <textarea id="help" name="entry.XXXXXXXX" rows="3" required></textarea>
+    </div>
+    <div class="field">
+      <label for="source">¿Cómo nos encontraste? (Instagram / Recomendación / Google / Otro) *</label>
+      <input type="text" id="source" name="entry.XXXXXXXX" required />
+    </div>
+    <div class="field">
+      <label for="color">¿Cuál es tu color favorito? *</label>
+      <input type="text" id="color" name="entry.XXXXXXXX" required />
+    </div>
+    <div class="field">
+      <label for="favorites">¿Cuáles son tus flores/plantas/dulces favoritos? *</label>
+      <textarea id="favorites" name="entry.XXXXXXXX" rows="2" required></textarea>
+    </div>
+    <div class="field">
+      <label for="comfort">¿Hay algo que te haga sentir especialmente cómoda al llegar a un lugar nuevo? *</label>
+      <textarea id="comfort" name="entry.XXXXXXXX" rows="2" required></textarea>
+    </div>
+    <div class="field">
+      <label for="concerns">¿Tienes alguna inquietud, miedo o expectativa sobre tu cita que te gustaría compartirnos? *</label>
+      <textarea id="concerns" name="entry.XXXXXXXX" rows="3" required></textarea>
+    </div>
+    <div class="field">
+      <label for="allergies">¿Tienes alguna alergia que debamos conocer? *</label>
+      <textarea id="allergies" name="entry.XXXXXXXX" rows="2" required></textarea>
+    </div>
+    <div class="field">
+      <label for="feelings">Si pudieras describir cómo te quieres sentir después de tu procedimiento / consulta ¿Qué palabras usarías? *</label>
+      <textarea id="feelings" name="entry.XXXXXXXX" rows="2" required></textarea>
+    </div>
+    <div class="field">
+      <label for="more">¿Algo más que te gustaría que sepamos de ti? *</label>
+      <textarea id="more" name="entry.XXXXXXXX" rows="3" required></textarea>
+    </div>
+    <button type="submit">Enviar</button>
+  </form>
+
+  <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+  <div id="success">¡Gracias! Hemos recibido tus respuestas.</div>
+
+  <!-- Logo principal al final -->
+  <!-- Reemplaza la ruta dentro de src="" por la ubicación real del archivo del logo en tu servidor o CDN -->
+  <img src="Logo Dr. Isaac Baley BCP.png" alt="Dr. Isaac Baley – Cirugía Plástica" class="logo" />
+
+  <script>
+    function handleSubmit(event) {
+      event.target.querySelector('button').disabled = true;
+      setTimeout(() => {
+        document.getElementById('customForm').style.display = 'none';
+        document.getElementById('success').style.display = 'block';
+      }, 600);
+    }
+  </script>
+</body>
+</html>
